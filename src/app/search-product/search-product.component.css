@@ -1,0 +1,91 @@
+body {
+  display: flex;
+  height: 100vh;
+
+  .filters {
+    width: 20%;
+    background-color: rgb(230, 210, 170);
+    padding: 10px;
+    overflow-y: auto;
+  }
+
+  .filters h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .filters ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .filters li {
+    margin-bottom: 0.5rem; /* Espaciado entre los filtros */
+  }
+
+  .filters input[type="checkbox"] {
+    margin-right: 0.5rem; /* Espaciado entre el checkbox y la etiqueta */
+  }
+
+  .filters label {
+    font-size: 1rem;
+    color: #555;
+    cursor: pointer; /* Cambia el cursor al pasar sobre las etiquetas */
+  }
+
+  .filters li:hover label {
+    color: rgb(66, 3, 44); /* Cambia el color al pasar el mouse */
+  }
+
+  .search-results {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  .selected-bar {
+    width: 300px;
+    background-color: rgb(230, 210, 170);
+    border-left: 1px solid rgb(230, 210, 170);
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+
+  .selected-bar.hidden {
+    transform: translateX(100%);
+  }
+
+  .selected-content {
+    padding: 20px;
+  }
+
+  .toggle-button {
+    padding: auto;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-size: xx-small;
+    position: absolute;
+    top: 20px;
+    left: -25px;
+    background-color: rgb(211, 107, 0);
+    color: rgb(235, 244, 246);
+    border: none;
+    border-start-end-radius: 6px;
+    border-start-start-radius: 6px;
+    width: 25px;
+    height: 60px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .toggle-button:hover {
+    background-color: rgb(66, 3, 44);
+  }
+
+  h3 {
+    margin-top: 0;
+  }
+}

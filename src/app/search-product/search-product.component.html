@@ -1,0 +1,54 @@
+<app-header> </app-header>
+<body>
+  <aside class="filters">
+    <h3>Filtros de Búsqueda</h3>
+    <ul>
+      <li>
+        <input type="checkbox" id="cpu" /> <label for="cpu">Procesador</label>
+      </li>
+      <li>
+        <input type="checkbox" id="motherboard" />
+        <label for="motherboard">Placa Madre</label>
+      </li>
+      <li>
+        <input type="checkbox" id="gpu" />
+        <label for="gpu">Tarjeta de Video</label>
+      </li>
+      <li><input type="checkbox" id="ram" /> <label for="ram">RAM</label></li>
+      <li>
+        <input type="checkbox" id="storage" />
+        <label for="storage">Almacenamiento</label>
+      </li>
+      <li>
+        <input type="checkbox" id="case" /> <label for="case">Gabinete</label>
+      </li>
+      <li>
+        <input type="checkbox" id="psu" />
+        <label for="psu">Fuente de Poder</label>
+      </li>
+      <li>
+        <input type="checkbox" id="cooler" />
+        <label for="cooler">Cooler CPU</label>
+      </li>
+    </ul>
+  </aside>
+
+  <main class="search-results">
+    <app-search-bar></app-search-bar>
+    <div class="components">
+      <p>Resultados de búsqueda aparecerán aquí.</p>
+    </div>
+  </main>
+
+  <div class="selected-bar" [class.hidden]="isSidebarHidden">
+    <button class="toggle-button" (click)="toggleSidebar()">BUILD</button>
+    <div class="selected-content">
+      <h3>Componentes Seleccionados</h3>
+      <ul>
+        <li *ngFor="let component of selectedComponents">
+          {{ component.name }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>

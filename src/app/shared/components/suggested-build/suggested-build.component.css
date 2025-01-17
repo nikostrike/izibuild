@@ -1,0 +1,52 @@
+.build-section {
+  margin: 20px;
+  padding: 10px;
+  display: grid;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  display: inline-flex;
+}
+
+.tiers {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.tier {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(148, 148, 148, 0.267);
+  }
+}
+
+.tier h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.tier ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tier li {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.build-price {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 16px;
+}

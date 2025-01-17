@@ -1,0 +1,40 @@
+.hero {
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0 20px;
+  background-color: rgb(230, 210, 170);
+  margin: 20px;
+  border-radius: 10px;
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: rgb(66, 3, 44);
+  }
+
+  .hero-logo img {
+    padding-top: 4px;
+    max-height: 200px;
+    object-fit: contain;
+  }
+
+  .hero-button {
+    height: 35px;
+    padding: 10px;
+    background-color: rgb(211, 107, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: rgb(66, 3, 44);
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+<div class="build-section">
+  <h2>Build Sugerida para Gaming >></h2>
+  <div class="tiers">
+    <div *ngFor="let tier of gamingBuild.tiers" class="tier">
+      <h3>{{ tier.name }}</h3>
+      <ul>
+        <li *ngFor="let component of tier.components">
+          <strong>{{ component.name }}:</strong> {{ component.specs }}
+        </li>
+      </ul>
+      <p class="build-price">Precio estimado: {{ tier.price | currency }}</p>
+    </div>
+  </div>
+</div>
+
+<div class="build-section">
+  <h2>Build Sugerida para Oficina >></h2>
+  <div class="tiers">
+    <div *ngFor="let tier of officeBuild.tiers" class="tier">
+      <h3>{{ tier.name }}</h3>
+      <ul>
+        <li *ngFor="let component of tier.components">
+          <strong>{{ component.name }}:</strong> {{ component.specs }}
+        </li>
+      </ul>
+      <p class="build-price">Precio estimado: {{ tier.price | currency }}</p>
+    </div>
+  </div>
+</div>
+
+<div class="build-section">
+  <h2>Build Sugerida para Edición >></h2>
+  <div class="tiers">
+    <div *ngFor="let tier of editingBuild.tiers" class="tier">
+      <h3>{{ tier.name }}</h3>
+      <ul>
+        <li *ngFor="let component of tier.components">
+          <strong>{{ component.name }}:</strong> {{ component.specs }}
+        </li>
+      </ul>
+      <p class="build-price">Precio estimado: {{ tier.price | currency }}</p>
+    </div>
+  </div>
+</div>
